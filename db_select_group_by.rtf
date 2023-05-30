@@ -68,8 +68,9 @@ WHERE `phone` IS NULL;\
 
 \fs72 \
 BONUS\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\fs36 \
+\fs36 \cf2 \
 1 Contare quanti iscritti ci sono stati ogni anno\
 \
 SELECT YEAR(`enrolment_date`) AS `Anno_Iscrizione`, \
@@ -96,6 +97,8 @@ HAVING COUNT(*)>1;\
 SELECT `exam_id`, AVG(`vote`) AS `mediavoti`\
 FROM `exam_student`\
 GROUP BY `exam_id`;\
+\
+\
 4 contare quanti corsi di laurea ci sono per ogni dipartimento\
 \
 SELECT department_id, COUNT(*) AS `numero_corsi_di_laurea`\
